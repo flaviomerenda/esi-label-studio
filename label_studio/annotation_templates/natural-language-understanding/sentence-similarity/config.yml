@@ -1,0 +1,29 @@
+title: Sentence Similarity
+type: community
+group: Natural Language Understanding
+image: /static/templates/sentence-similarity.png
+details: <h1>Sentence Similarity Task - Help us to detect how similar are two sentences</h1>
+config: '
+<View style="flex: 50%">
+  <Header>Choose one of the options that describes the semantic similarity grade between the following pair of sentences:</Header>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+  <Text name="sent_1" value="$sent_1" />
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 1em; margin-bottom: 2em; border-radius: 5px;">
+  <Text name="sent_2" value="$sent_2" />
+  </View>
+  <Choices name="sentence_similarity" toName="sent_1,sent_2" choice="single">
+    <Choice value="Agree with each other" alias="agree" />
+    <Choice value="Disagree with each other" alias="disagree" />
+    <Choice value="Discuss the same issue" alias="discuss" />
+    <Choice value="Are unrelated" alias="unrelated" />
+  </Choices>
+</View>
+
+<!-- {
+"data": {"sent_1": "This is the first sentence",
+         "sent_2": "This is the second sentence"}
+}
+-->
+'
+
