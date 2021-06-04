@@ -1,0 +1,24 @@
+title: Check Worthiness
+type: community
+group: Natural Language Understanding
+image: /static/templates/check-worthiness.png
+details: <h1>Check Worthiness Task - Identify factual statements</h1>
+config: '
+<View style="flex: 50%">
+  <Header>Do you think the following sentence contains a factual claim? (A factual claims is any statement that refers to measurable effects that can be proved right or wrong)</Header>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; margin-bottom: 2em; border-radius: 5px;">
+  <Text name="sentence" value="$sentence" />
+  </View>
+  <Choices name="check_worthiness" toName="sentence" choice="single">
+    <Choice value="Yes, and the claim can be veriﬁed" alias="CFS" />
+    <Choice value="Yes, but nobody could verify it" alias="NCF-NV" />
+    <Choice value="No, it is not a factual claim" alias="NCF-NF" />
+  </Choices>
+</View>
+
+<!-- {
+"data": {"sentence": "This is the sentence"}
+}
+-->
+'
+
