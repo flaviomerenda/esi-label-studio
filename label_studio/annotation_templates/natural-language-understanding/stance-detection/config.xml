@@ -1,0 +1,21 @@
+<View style="flex: 50%">
+  <Header>Choose one of the options that describes the relation between the following text pair:</Header>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+  <Text name="text_1" value="$text_1" />
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 1em; margin-bottom: 2em; border-radius: 5px;">
+  <Text name="text_2" value="$text_2" />
+  </View>
+  <Choices name="stance_detection" toName="text_1,text_2" choice="single">
+    <Choice value="Agree with each other" alias="agree" />
+    <Choice value="Disagree with each other" alias="disagree" />
+    <Choice value="Discuss the same issue" alias="discuss" />
+    <Choice value="Are unrelated" alias="unrelated" />
+  </Choices>
+</View>
+
+<!-- {
+"data": {"text_1": "This is the first text",
+         "text_2": "This is the second text"}
+}
+-->

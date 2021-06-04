@@ -7,10 +7,12 @@
   <Text name="sent_2" value="$sent_2" />
   </View>
   <Choices name="sentence_similarity" toName="sent_1,sent_2" choice="single">
-    <Choice value="Agree with each other" alias="agree" />
-    <Choice value="Disagree with each other" alias="disagree" />
-    <Choice value="Discuss the same issue" alias="discuss" />
-    <Choice value="Are unrelated" alias="unrelated" />
+    <Choice value="completely equivalent, as they mean the same thing" alias="5" />
+    <Choice value="mostly equivalent, but some unimportant details diﬀer" alias="4" />
+    <Choice value="roughly equivalent, but some important information diﬀers/missing" alias="3" />
+    <Choice value="not equivalent, but share some details" alias="2" />
+    <Choice value="not equivalent, but are on the same topic" alias="1" />
+    <Choice value="on diﬀerent topics" alias="0" />
   </Choices>
 </View>
 

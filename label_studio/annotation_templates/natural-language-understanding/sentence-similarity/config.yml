@@ -2,7 +2,7 @@ title: Sentence Similarity
 type: community
 group: Natural Language Understanding
 image: /static/templates/sentence-similarity.png
-details: <h1>Sentence Similarity Task - Help us to detect how similar are two sentences</h1>
+details: <h1>Sentence Similarity Task - Annotate the degree of semantic similarity between two sentences</h1>
 config: '
 <View style="flex: 50%">
   <Header>Choose one of the options that describes the semantic similarity grade between the following pair of sentences:</Header>
@@ -13,10 +13,12 @@ config: '
   <Text name="sent_2" value="$sent_2" />
   </View>
   <Choices name="sentence_similarity" toName="sent_1,sent_2" choice="single">
-    <Choice value="Agree with each other" alias="agree" />
-    <Choice value="Disagree with each other" alias="disagree" />
-    <Choice value="Discuss the same issue" alias="discuss" />
-    <Choice value="Are unrelated" alias="unrelated" />
+    <Choice value="completely equivalent, as they mean the same thing" alias="5" />
+    <Choice value="mostly equivalent, but some unimportant details diﬀer" alias="4" />
+    <Choice value="roughly equivalent, but some important information diﬀers/missing" alias="3" />
+    <Choice value="not equivalent, but share some details" alias="2" />
+    <Choice value="not equivalent, but are on the same topic" alias="1" />
+    <Choice value="on diﬀerent topics" alias="0" />
   </Choices>
 </View>
 
