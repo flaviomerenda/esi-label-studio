@@ -1,0 +1,45 @@
+ <View style="flex: 50%">
+  <Header>Do you think the following sentence contains a factual claim? (A factual claims is any statement that refers to measurable effects that can be proved right or wrong)</Header>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; margin-bottom: 2em; border-radius: 5px;">
+    <Text name="sentence" value="$sentence_norm" />
+  </View>
+  <Choices name="check_worthiness" toName="sentence" choice="single">
+    <Choice value="Yes, and the claim can be veriﬁed" alias="CFS" />
+    <Choice value="Yes, but nobody could verify it" alias="NCS-NV" />
+    <Choice value="No, it is not a factual claim" alias="NCS-NF" />
+  </Choices>
+  <View style="flex: 50%" visibleWhen="choice-selected" whenTagName="check_worthiness" whenChoiceValue="CFS">
+    <Header>How credible is this claim in a range between -1 (not credible) and 1 (credible)?</Header>
+    <RatingSlider name="credibility_rating" />
+  </View>
+  <View style="flex: 50%" visibleWhen="choice-selected" whenTagName="check_worthiness" whenChoiceValue="CFS">
+    <Header>How will you score the confidence about the credibility rating you gave in a range between 0 and 1?</Header>
+    <RatingSlider name="confidence_rating" minRating="0" />
+  </View>
+  <View style="flex: 50%" visibleWhen="choice-selected" whenTagName="check_worthiness" whenChoiceValue="CFS">
+    <Header>Choose one of the options that describes the relation between the following sentence pair:</Header>
+    <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Text name="sentence_norm" value="$sentence_norm" />
+    </View>
+    <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 1em; margin-bottom: 2em; border-radius: 5px;">
+    <Text name="sentence_context" value="$sentence_context" />
+    </View>
+    <Choices name="stance_detection" toName="sentence_norm,sentence_context" choice="single">
+      <Choice value="Agree with each other" alias="agree" />
+      <Choice value="Disagree with each other" alias="disagree" />
+      <Choice value="Discuss the same issue" alias="discuss" />
+      <Choice value="Are unrelated" alias="unrelated" />
+    </Choices>
+  </View>
+</View>
+
+<!--
+{
+   "source":"document_source",
+   "id":"number",
+   "content":"Relevant domain document rated by its credibility.",
+   "sentence":"Sentence",
+   "sentence_norm":"This is the normalised sentence",
+   "sentence_context":"Sentence which our normalised sentence refers"
+}
+-->

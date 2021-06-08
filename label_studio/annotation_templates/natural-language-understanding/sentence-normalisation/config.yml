@@ -1,0 +1,21 @@
+title: Sentence Normalisation
+type: community
+group: Natural Language Understanding
+image: /static/templates/sentence-normalisation.png
+details: <h1>To annotate an existing text in such a way that the grammar and structure of the prose is greatly simplified, while the underlying meaning and information remains the same.</h1>
+config: '
+<View style="flex: 50%">
+  <Header>Do you think the following sentence can be simplified to focus on the underlie meaning? if yes, try to simplify it please.</Header>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; margin-bottom: 2em; border-radius: 5px;">
+    <Text name="sentence" value="$sentence" />
+  </View>
+  <View style="flex: 50%">
+  <View>
+    <TextArea name="normalised_sentence"></TextArea>
+  </View>
+  </View>
+</View>
+
+<!-- { "data": {"sentence": "This is the sentence"} } -->
+'
+

@@ -11,9 +11,14 @@ config: '
   </View>
   <Choices name="check_worthiness" toName="sentence" choice="single">
     <Choice value="Yes, and the claim can be veriﬁed" alias="CFS" />
-    <Choice value="Yes, but nobody could verify it" alias="NCF-NV" />
-    <Choice value="No, it is not a factual claim" alias="NCF-NF" />
+    <Choice value="Yes, but nobody could verify it" alias="NCS-NV" />
+    <Choice value="No, it is not a factual claim" alias="NCS-NF" />
   </Choices>
+
+  <View style="flex: 50%" visibleWhen="choice-selected" whenTagName="check_worthiness" whenChoiceValue="CFS">
+    <Header>Do you think the following sentence can be simplified to focus on the detected claim? if yes, try to simplify it please</Header>
+    <TextArea name="ta"></TextArea>
+  </View>
 </View>
 
 <!-- {

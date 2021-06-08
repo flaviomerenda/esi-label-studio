@@ -1,0 +1,23 @@
+title: Document Credibility
+type: community
+group: Natural Language Understanding
+image: /static/templates/document-credibility.png
+details: <h1>To annotate the credibility of a document choosing a value between -1 and 1. Then, the confidence of the credibility label with a value between 0 and 1.</h1>
+config: '
+<View style="flex: 50%">
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; margin-bottom: 2em; border-radius: 5px;">
+    <Text name="document" value="$document" />
+  </View>
+  <View style="flex: 50%">
+    <Header>How credible is this document in a range between -1 (not credible) and 1 (credible)?</Header>
+    <RatingSlider name="credibility_rating" />
+  </View>
+  <View style="flex: 50%">
+    <Header>How will you score the confidence about the credibility rating you gave in a range between 0 and 1?</Header>
+    <RatingSlider name="confidence_rating" minRating="0" />
+  </View>
+</View>
+
+<!-- { "data": {"document": "This is the document"} } -->
+'
+
