@@ -8577,7 +8577,7 @@ const DataManagerPage = ({ ...props
 };
 DataManagerPage.path = "/data";
 DataManagerPage.pages = {
-  ExportPage: _ExportPage_ExportPage__WEBPACK_IMPORTED_MODULE_10__.ExportPage,
+  // ExportPage: _ExportPage_ExportPage__WEBPACK_IMPORTED_MODULE_10__.ExportPage,
   ImportModal: _CreateProject_Import_ImportModal__WEBPACK_IMPORTED_MODULE_9__.ImportModal
 };
 
@@ -8594,7 +8594,7 @@ DataManagerPage.context = ({
   const links = {
     '/settings': 'Settings',
     '/data/import': "Import",
-    '/data/export': 'Export'
+    // '/data/export': 'Export'
   };
 
   const updateCrumbs = currentMode => {
@@ -9789,29 +9789,27 @@ const ProjectCard = ({
 
 /***/ }),
 
-/***/ "./src/pages/Settings/DangerZone.js":
-/*!******************************************!*\
-  !*** ./src/pages/Settings/DangerZone.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+// /***/ "./src/pages/Settings/DangerZone.js":
+// /*!******************************************!*\
+//   !*** ./src/pages/Settings/DangerZone.js ***!
+//   \******************************************/
+// /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "DangerZone": () => (/* binding */ DangerZone)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components */ "./src/components/index.js");
-/* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Form */ "./src/components/Form/index.js");
-/* harmony import */ var _components_Modal_Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Modal/Modal */ "./src/components/Modal/Modal.js");
-/* harmony import */ var _components_Space_Space__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Space/Space */ "./src/components/Space/Space.js");
-/* harmony import */ var _components_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/Spinner/Spinner */ "./src/components/Spinner/Spinner.js");
-/* harmony import */ var _providers_ApiProvider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../providers/ApiProvider */ "./src/providers/ApiProvider.js");
-/* harmony import */ var _providers_ProjectProvider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../providers/ProjectProvider */ "./src/providers/ProjectProvider.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
+// "use strict";
+// __webpack_require__.r(__webpack_exports__);
+// /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+// /* harmony export */   "DangerZone": () => (/* binding */ DangerZone)
+// /* harmony export */ });
+// /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+// /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
+// /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components */ "./src/components/index.js");
+// /* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Form */ "./src/components/Form/index.js");
+// /* harmony import */ var _components_Modal_Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Modal/Modal */ "./src/components/Modal/Modal.js");
+// /* harmony import */ var _components_Space_Space__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/Space/Space */ "./src/components/Space/Space.js");
+// /* harmony import */ var _components_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/Spinner/Spinner */ "./src/components/Spinner/Spinner.js");
+// /* harmony import */ var _providers_ApiProvider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../providers/ApiProvider */ "./src/providers/ApiProvider.js");
+// /* harmony import */ var _providers_ProjectProvider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../providers/ProjectProvider */ "./src/providers/ProjectProvider.js");
+// /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -9821,112 +9819,114 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const DangerZone = () => {
-  const {
-    project
-  } = (0,_providers_ProjectProvider__WEBPACK_IMPORTED_MODULE_7__.useProject)();
-  const api = (0,_providers_ApiProvider__WEBPACK_IMPORTED_MODULE_6__.useAPI)();
-  const history = (0,react_router__WEBPACK_IMPORTED_MODULE_9__.useHistory)();
-  const [processing, setProcessing] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
 
-  const handleOnClick = type => () => {
-    (0,_components_Modal_Modal__WEBPACK_IMPORTED_MODULE_3__.confirm)({
-      title: "Action confirmation",
-      body: "You're about to delete all things. This action cannot be undone.",
-      okText: "Proceed",
-      buttonLook: "destructive",
-      onOk: async () => {
-        setProcessing(type);
 
-        if (type === 'annotations') {// console.log('delete annotations');
-        } else if (type === 'tasks') {// console.log('delete tasks');
-        } else if (type === 'predictions') {// console.log('delete predictions');
-        } else if (type === 'tabs') {
-          await api.callApi('deleteTabs', {
-            body: {
-              project: project.id
-            }
-          });
-        } else if (type === 'project') {
-          await api.callApi('deleteProject', {
-            params: {
-              pk: project.id
-            }
-          });
-          history.replace('/projects');
-        }
+// const DangerZone = () => {
+//   const {
+//     project
+//   } = (0,_providers_ProjectProvider__WEBPACK_IMPORTED_MODULE_7__.useProject)();
+//   const api = (0,_providers_ApiProvider__WEBPACK_IMPORTED_MODULE_6__.useAPI)();
+//   const history = (0,react_router__WEBPACK_IMPORTED_MODULE_9__.useHistory)();
+//   const [processing, setProcessing] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
 
-        setProcessing(null);
-      }
-    });
-  };
+//   const handleOnClick = type => () => {
+//     (0,_components_Modal_Modal__WEBPACK_IMPORTED_MODULE_3__.confirm)({
+//       title: "Action confirmation",
+//       body: "You're about to delete all things. This action cannot be undone.",
+//       okText: "Proceed",
+//       buttonLook: "destructive",
+//       onOk: async () => {
+//         setProcessing(type);
 
-  const buttons = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => [{
-    type: 'annotations',
-    disabled: true,
-    //&& !project.total_annotations_number,
-    label: `Delete ${project.total_annotations_number} Annotations`
-  }, {
-    type: 'tasks',
-    disabled: true,
-    //&& !project.task_number,
-    label: `Delete ${project.task_number} Tasks`
-  }, {
-    type: 'predictions',
-    disabled: true,
-    //&& !project.total_predictions_number,
-    label: `Delete ${project.total_predictions_number} Predictions`
-  }, {
-    type: 'tabs',
-    label: `Drop All Tabs`
-  }, {
-    type: 'project',
-    label: 'Delete Project'
-  }], [project]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
-    style: {
-      width: 480
-    },
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Form__WEBPACK_IMPORTED_MODULE_2__.Label, {
-      text: "Delete Annotations, Tasks, or\xA0Project",
-      description: "Perform these actions at your own risk. Actions you take on this page can't be reverted. Make sure your data is backed up.",
-      style: {
-        display: 'block',
-        width: 415
-      }
-    }), project.id ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Space_Space__WEBPACK_IMPORTED_MODULE_4__.Space, {
-      direction: "vertical",
-      spread: true,
-      style: {
-        marginTop: 32
-      },
-      children: buttons.map(btn => {
-        const waiting = processing === btn.type;
-        const disabled = btn.disabled || processing && !waiting;
-        return btn.disabled !== true && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
-          look: "danger",
-          disabled: disabled,
-          waiting: waiting,
-          onClick: handleOnClick(btn.type),
-          children: btn.label
-        }, btn.type);
-      })
-    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
-      style: {
-        display: "flex",
-        justifyContent: "center",
-        marginTop: 32
-      },
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_5__.Spinner, {
-        size: 32
-      })
-    })]
-  });
-};
-DangerZone.title = "Danger Zone";
-DangerZone.path = "/danger-zone";
+//         if (type === 'annotations') {// console.log('delete annotations');
+//         } else if (type === 'tasks') {// console.log('delete tasks');
+//         } else if (type === 'predictions') {// console.log('delete predictions');
+//         } else if (type === 'tabs') {
+//           await api.callApi('deleteTabs', {
+//             body: {
+//               project: project.id
+//             }
+//           });
+//         } else if (type === 'project') {
+//           await api.callApi('deleteProject', {
+//             params: {
+//               pk: project.id
+//             }
+//           });
+//           history.replace('/projects');
+//         }
 
-/***/ }),
+//         setProcessing(null);
+//       }
+//     });
+//   };
+
+//   const buttons = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => [{
+//     type: 'annotations',
+//     disabled: true,
+//     //&& !project.total_annotations_number,
+//     label: `Delete ${project.total_annotations_number} Annotations`
+//   }, {
+//     type: 'tasks',
+//     disabled: true,
+//     //&& !project.task_number,
+//     label: `Delete ${project.task_number} Tasks`
+//   }, {
+//     type: 'predictions',
+//     disabled: true,
+//     //&& !project.total_predictions_number,
+//     label: `Delete ${project.total_predictions_number} Predictions`
+//   }, {
+//     type: 'tabs',
+//     label: `Drop All Tabs`
+//   }, {
+//     type: 'project',
+//     label: 'Delete Project'
+//   }], [project]);
+//   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
+//     style: {
+//       width: 480
+//     },
+//     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Form__WEBPACK_IMPORTED_MODULE_2__.Label, {
+//       text: "Delete Annotations, Tasks, or\xA0Project",
+//       description: "Perform these actions at your own risk. Actions you take on this page can't be reverted. Make sure your data is backed up.",
+//       style: {
+//         display: 'block',
+//         width: 415
+//       }
+//     }), project.id ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Space_Space__WEBPACK_IMPORTED_MODULE_4__.Space, {
+//       direction: "vertical",
+//       spread: true,
+//       style: {
+//         marginTop: 32
+//       },
+//       children: buttons.map(btn => {
+//         const waiting = processing === btn.type;
+//         const disabled = btn.disabled || processing && !waiting;
+//         return btn.disabled !== true && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
+//           look: "danger",
+//           disabled: disabled,
+//           waiting: waiting,
+//           onClick: handleOnClick(btn.type),
+//           children: btn.label
+//         }, btn.type);
+//       })
+//     }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("div", {
+//       style: {
+//         display: "flex",
+//         justifyContent: "center",
+//         marginTop: 32
+//       },
+//       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_Spinner_Spinner__WEBPACK_IMPORTED_MODULE_5__.Spinner, {
+//         size: 32
+//       })
+//     })]
+//   });
+// };
+// DangerZone.title = "Danger Zone";
+// DangerZone.path = "/danger-zone";
+
+// /***/ }),
 
 /***/ "./src/pages/Settings/GeneralSettings.js":
 /*!***********************************************!*\
@@ -11194,7 +11194,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _components_SidebarMenu_SidebarMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/SidebarMenu/SidebarMenu */ "./src/components/SidebarMenu/SidebarMenu.js");
-/* harmony import */ var _DangerZone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DangerZone */ "./src/pages/Settings/DangerZone.js");
+// /* harmony import */ var _DangerZone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DangerZone */ "./src/pages/Settings/DangerZone.js");
 /* harmony import */ var _GeneralSettings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./GeneralSettings */ "./src/pages/Settings/GeneralSettings.js");
 /* harmony import */ var _InstructionsSettings__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./InstructionsSettings */ "./src/pages/Settings/InstructionsSettings.js");
 /* harmony import */ var _LabelingSettings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LabelingSettings */ "./src/pages/Settings/LabelingSettings.js");
@@ -11215,7 +11215,7 @@ const MenuLayout = ({
   ...routeProps
 }) => {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_components_SidebarMenu_SidebarMenu__WEBPACK_IMPORTED_MODULE_1__.SidebarMenu, {
-    menuItems: [_GeneralSettings__WEBPACK_IMPORTED_MODULE_3__.GeneralSettings, _LabelingSettings__WEBPACK_IMPORTED_MODULE_5__.LabelingSettings, _InstructionsSettings__WEBPACK_IMPORTED_MODULE_4__.InstructionsSettings, _MachineLearningSettings_MachineLearningSettings__WEBPACK_IMPORTED_MODULE_6__.MachineLearningSettings, _StorageSettings_StorageSettings__WEBPACK_IMPORTED_MODULE_7__.StorageSettings, _DangerZone__WEBPACK_IMPORTED_MODULE_2__.DangerZone],
+    menuItems: [_GeneralSettings__WEBPACK_IMPORTED_MODULE_3__.GeneralSettings, _LabelingSettings__WEBPACK_IMPORTED_MODULE_5__.LabelingSettings, _InstructionsSettings__WEBPACK_IMPORTED_MODULE_4__.InstructionsSettings, _MachineLearningSettings_MachineLearningSettings__WEBPACK_IMPORTED_MODULE_6__.MachineLearningSettings, _StorageSettings_StorageSettings__WEBPACK_IMPORTED_MODULE_7__.StorageSettings], // _DangerZone__WEBPACK_IMPORTED_MODULE_2__.DangerZone],
     path: routeProps.match.url,
     children: children
   });
@@ -11231,7 +11231,7 @@ const SettingsPage = {
     LabelingSettings: _LabelingSettings__WEBPACK_IMPORTED_MODULE_5__.LabelingSettings,
     MachineLearningSettings: _MachineLearningSettings_MachineLearningSettings__WEBPACK_IMPORTED_MODULE_6__.MachineLearningSettings,
     StorageSettings: _StorageSettings_StorageSettings__WEBPACK_IMPORTED_MODULE_7__.StorageSettings,
-    DangerZone: _DangerZone__WEBPACK_IMPORTED_MODULE_2__.DangerZone
+    // DangerZone: _DangerZone__WEBPACK_IMPORTED_MODULE_2__.DangerZone
   }
 };
 
