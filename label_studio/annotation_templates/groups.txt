@@ -1,9 +1,1 @@
-Computer Vision
-Natural Language Processing
-Audio/Speech Processing
-Conversational AI
-Ranking & Scoring
 Natural Language Understanding
-Structured Data Parsing
-Time Series Analysis
-Videos

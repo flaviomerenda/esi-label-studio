@@ -1,0 +1,23 @@
+title: Propaganda Sentence Classification
+type: community
+group: Natural Language Understanding
+image: /static/templates/propaganda-sentence-classification.png
+details: <h1>Annotate if a sentence contain propaganda contents</h1>
+config: '
+<View style="flex: 50%">
+  <Header>Do you think this sentence spreads propaganda contents?</Header>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+  <Text name="sent" value="$sent" />
+  </View>
+  <Choices name="propaganda_classification" toName="sent" choice="single">
+    <Choice value="Yes" alias="1" />
+    <Choice value="No" alias="0" />
+  </Choices>
+</View>
+
+<!-- {
+"data": {"sent": "This is the sentence to check"}
+}
+-->
+'
+

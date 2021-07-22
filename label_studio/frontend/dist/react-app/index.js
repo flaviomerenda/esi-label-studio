@@ -4999,36 +4999,36 @@ const Menubar = ({
               icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.IconPersonInCircle, {}),
               "data-external": true,
               exact: true
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Spacer, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_VersionNotifier_VersionNotifier__WEBPACK_IMPORTED_MODULE_12__.VersionNotifier, {
-              showNewVersion: true
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Item, {
-              label: "API",
-              href: "/docs/api",
-              icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.IconTerminal, {}),
-              target: "_blank"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Item, {
-              label: "Docs",
-              href: "https://labelstud.io/guide",
-              icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.IconBook, {}),
-              target: "_blank"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Item, {
-              label: "GitHub",
-              href: "https://github.com/heartexlabs/label-studio",
-              icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.LsGitHub, {}),
-              target: "_blank"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Item, {
-              label: "Slack Community",
-              href: "https://join.slack.com/t/label-studio/shared_invite/zt-qy37y73p-CCfEaEZvDylyQf4oatK40A",
-              icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.LsSlack, {}),
-              target: "_blank"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_VersionNotifier_VersionNotifier__WEBPACK_IMPORTED_MODULE_12__.VersionNotifier, {
-              showCurrentVersion: true
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Divider, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Item, {
-              icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.IconPin, {}),
-              className: sidebarClass.elem('pin'),
-              onClick: sidebarPin,
-              active: sidebarPinned,
-              children: sidebarPinned ? "Unpin menu" : "Pin menu"
+            // }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Spacer, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_VersionNotifier_VersionNotifier__WEBPACK_IMPORTED_MODULE_12__.VersionNotifier, {
+            //   showNewVersion: true
+            // }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Item, {
+            //   label: "API",
+            //   href: "/docs/api",
+            //   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.IconTerminal, {}),
+            //   target: "_blank"
+            // }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Item, {
+            //   label: "Docs",
+            //   href: "https://labelstud.io/guide",
+            //   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.IconBook, {}),
+            //   target: "_blank"
+            // }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Item, {
+            //   label: "GitHub",
+            //   href: "https://github.com/heartexlabs/label-studio",
+            //   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.LsGitHub, {}),
+            //   target: "_blank"
+            // }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Item, {
+            //   label: "Slack Community",
+            //   href: "https://join.slack.com/t/label-studio/shared_invite/zt-qy37y73p-CCfEaEZvDylyQf4oatK40A",
+            //   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.LsSlack, {}),
+            //   target: "_blank"
+            // }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_VersionNotifier_VersionNotifier__WEBPACK_IMPORTED_MODULE_12__.VersionNotifier, {
+            //   showCurrentVersion: true
+            // }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Divider, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_Menu_Menu__WEBPACK_IMPORTED_MODULE_10__.Menu.Item, {
+            //   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(_assets_icons__WEBPACK_IMPORTED_MODULE_2__.IconPin, {}),
+            //   className: sidebarClass.elem('pin'),
+            //   onClick: sidebarPin,
+            //   active: sidebarPinned,
+            //   children: sidebarPinned ? "Unpin menu" : "Pin menu"
             })]
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_16__.jsx)(MenubarContext.Provider, {
@@ -8577,7 +8577,7 @@ const DataManagerPage = ({ ...props
 };
 DataManagerPage.path = "/data";
 DataManagerPage.pages = {
-  // ExportPage: _ExportPage_ExportPage__WEBPACK_IMPORTED_MODULE_10__.ExportPage,
+  ExportPage: _ExportPage_ExportPage__WEBPACK_IMPORTED_MODULE_10__.ExportPage,
   ImportModal: _CreateProject_Import_ImportModal__WEBPACK_IMPORTED_MODULE_9__.ImportModal
 };
 
@@ -8592,8 +8592,8 @@ DataManagerPage.context = ({
   } = (0,_providers_ProjectProvider__WEBPACK_IMPORTED_MODULE_5__.useProject)();
   const [mode, setMode] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)((_dmRef$mode = dmRef === null || dmRef === void 0 ? void 0 : dmRef.mode) !== null && _dmRef$mode !== void 0 ? _dmRef$mode : "explorer");
   const links = {
-    '/settings': 'Settings',
-    '/data/import': "Import",
+    // '/settings': 'Settings',
+    // '/data/import': "Import",
     // '/data/export': 'Export'
   };
 
@@ -9584,18 +9584,18 @@ ProjectsPage.routes = ({
   }
 }];
 
-ProjectsPage.context = ({
-  openModal,
-  showButton
-}) => {
-  if (!showButton) return null;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
-    onClick: openModal,
-    look: "primary",
-    size: "compact",
-    children: "Create"
-  });
-};
+// ProjectsPage.context = ({
+//   openModal,
+//   showButton
+// }) => {
+//   if (!showButton) return null;
+//   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_12__.jsx)(_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
+//     onClick: openModal,
+//     look: "primary",
+//     size: "compact",
+//     children: "Create"
+//   });
+// };
 
 /***/ }),
 
@@ -9711,10 +9711,14 @@ const ProjectCard = ({
             },
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components__WEBPACK_IMPORTED_MODULE_3__.Dropdown.Trigger, {
               content: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_3__.Menu, {
+                // children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components__WEBPACK_IMPORTED_MODULE_3__.Menu.Item, {
+                //   href: `/projects/$/settings{project.id}`,
+                //   children: "Settings"
+                // }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components__WEBPACK_IMPORTED_MODULE_3__.Menu.Item, {
+                //   href: `/projects/${project.id}/data?labeling=1`,
+                //   children: "Label"
+                // })]
                 children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components__WEBPACK_IMPORTED_MODULE_3__.Menu.Item, {
-                  href: `/projects/${project.id}/settings`,
-                  children: "Settings"
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components__WEBPACK_IMPORTED_MODULE_3__.Menu.Item, {
                   href: `/projects/${project.id}/data?labeling=1`,
                   children: "Label"
                 })]
