@@ -1,5 +1,5 @@
 <View style="flex: 50%">
-  <Header>Choose one of the options that describes the semantic similarity grade between the following pair of sentences:</Header>
+  <Header>In your opinion, how similar is the meaning of these two sentences?</Header>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
   <Text name="sent_1" value="$sent_1" />
   </View>

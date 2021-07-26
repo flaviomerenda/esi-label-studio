@@ -1,5 +1,5 @@
 <View style="flex: 50%">
-  <Header>Do you think this sentence spreads propaganda contents?</Header>
+  <Header>In your opinion, does this sentence, extracted from the paragraph below, contain propaganda?</Header>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
   <Text name="sent" value="$sent" />
   </View>
@@ -7,9 +7,12 @@
     <Choice value="Yes" alias="1" />
     <Choice value="No" alias="0" />
   </Choices>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+  <Text name="context" value="$context" />
+  </View>
 </View>
 
 <!-- {
-"data": {"sent": "This is the sentence to check"}
+"data": {"sent": "This is the sentence to check", "context": "This is the related context"}
 }
 -->
