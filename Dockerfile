@@ -23,6 +23,8 @@ COPY . /label-studio
 RUN python3.8 setup.py develop
 
 EXPOSE 8080
+RUN apt-get install -y dos2unix # Installs dos2unix Linux
+RUN find ./deploy/ -type f -exec dos2unix {} \; # recursively removes windows related stuff
 RUN ./deploy/prebuild_wo_frontend.sh
 
 ENTRYPOINT ["./deploy/docker-entrypoint.sh"]

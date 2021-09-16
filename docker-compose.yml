@@ -5,7 +5,7 @@ services:
   nginx:
     image: nginx:latest
     ports:
-      - 8080:80
+      - 8070:8071
     depends_on:
       - app
     volumes:
